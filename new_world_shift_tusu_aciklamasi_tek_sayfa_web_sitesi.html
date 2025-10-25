@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>New World — Shift Tuşunun Felsefesi</title>
+  <meta name="description" content="New World'de Shift tuşuna neden basılması gerektiğini epik bir dille anlatan interaktif tek sayfa web sitesi." />
+  <style>
+    :root{
+      --bg:#071019; --card:#0f1720; --accent:#7ee787; --muted:#9aa4ad; --glass: rgba(255,255,255,0.04);
+      --gold: #f6c85f;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#03060a 0%, #071019 60%);color:#e6eef6;line-height:1.6}
+    header{padding:28px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#ff9b6b);display:flex;align-items:center;justify-content:center;font-weight:800;color:#071019;font-size:20px;box-shadow:0 6px 20px rgba(0,0,0,0.5)}
+    nav{display:flex;gap:12px}
+    button.primary{background:var(--accent);color:#052018;border:0;padding:8px 14px;border-radius:10px;cursor:pointer;font-weight:600}
+    main{max-width:980px;margin:0 auto;padding:10px}
+    .hero{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:12px;padding:28px;display:grid;grid-template-columns:1fr;gap:16px;box-shadow:0 6px 30px rgba(2,6,9,0.6)}
+    h1{margin:0;font-size:28px}
+    .lede{color:var(--muted)}
+    .controls{display:flex;gap:10px;align-items:center}
+    .controls .seg{background:var(--glass);padding:6px;border-radius:10px}
+    section.card{margin-top:18px;padding:18px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px}
+    .card h2{margin-top:0}
+    .muted{color:var(--muted)}
+    footer{max-width:980px;margin:22px auto;padding:14px;color:var(--muted);text-align:center}
+    .tools{display:flex;gap:10px}
+    pre{white-space:pre-wrap}
+    /* small devices */
+    @media(min-width:760px){.hero{grid-template-columns:1fr 340px}}
+    /* animations */
+    .sparkle{position:relative}
+    .sparkle:after{content:'';position:absolute;right:-12px;top:-12px;width:10px;height:10px;border-radius:50%;background:var(--gold);box-shadow:0 0 30px var(--gold, #f6c85f);opacity:0.9}
+    .toggle{cursor:pointer;padding:8px 10px;border-radius:10px;background:transparent;border:1px solid rgba(255,255,255,0.04)}
+    .small{font-size:13px}
+    .panel{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);}
+    .copybtn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px;border-radius:8px;cursor:pointer}
+    .hidden{display:none}
+    a.link{color:var(--accent);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">NW</div>
+      <div>
+        <div style="font-weight:700">New World — Shift Tuşu</div>
+        <div class="muted small">Epik Açıklama / Öğretici</div>
+      </div>
+    </div>
+    <div class="tools">
+      <button id="toggleMode" class="toggle">Epik Mod</button>
+      <button id="copyAll" class="copybtn">Tümünü Kopyala</button>
+      <button id="downloadBtn" class="copybtn">HTML İndir</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1 id="title">Shift Tuşunun Felsefesi: Kaçışın, Taktiğin ve Hayatta Kalmanın Anahtarı</h1>
+        <p class="lede">Aeternum’un vahşi topraklarında bir tuş, binlerce kaderi etkiler. Bu sayfada Shift tuşunu neden kullanman gerektiğini derinlemesine, pratik ipuçlarıyla ve hikâyelerle anlatıyorum.</p>
+
+        <div class="card panel" id="content">
+          <!-- İçerik yerleştirilecek -->
+        </div>
+
+        <section class="card">
+          <h2>Kısa Özet</h2>
+          <p class="muted">Shift: sadece hız değil; pozisyon, zaman yönetimi, stamina kontrolü ve takım koordinasyonu demektir. Doğru kullanıldığında seni efsane yapar.</p>
+        </section>
+
+        <section class="card">
+          <h2>Pratik İpuçları</h2>
+          <ul>
+            <li><strong>Stamina'ya dikkat et:</strong> Sprint sonrası bir an toparlanmaya ihtiyacın olur. Saldırıya hazır değilsen sprint yapma.</li>
+            <li><strong>Tekrar konumlan:</strong> Shift ile rakibin açısını boz, sonra saldırıya geç.</li>
+            <li><strong>Grupla koordinasyon:</strong> Ölçülü sprint ile healere veya hedefe ulaşabilirsin.</li>
+            <li><strong>Keşif:</strong> Daha hızlı gidersin, gizli bölgeleri daha çabuk bulursun.</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>Epik Sonuç</h2>
+          <p class="muted">Aeternum’da Shift’e bilinçle basanlar efsane olur. Unutma: yanlış kullanım seni sınırlar, doğru kullanım daima açar.</p>
+        </section>
+
+      </div>
+
+      <aside class="panel">
+        <h3 class="small">Görünüm Kontrolleri</h3>
+        <div style="margin-top:8px">
+          <label class="small muted">Mod:</label>
+          <div style="display:flex;gap:8px;margin-top:6px">
+            <button id="epicBtn" class="primary small">Epik</button>
+            <button id="funBtn" class="toggle small">Mizah</button>
+          </div>
+        </div>
+
+        <hr style="margin:12px 0;border:none;border-top:1px solid rgba(255,255,255,0.03)" />
+        <div>
+          <h4 class="small muted">Hızlı Eylemler</h4>
+          <div style="display:flex;gap:8px;margin-top:8px">
+            <button id="copySection" class="copybtn small">Bu Bölümü Kopyala</button>
+            <button id="shareBtn" class="copybtn small">Paylaşma Bağlantısı</button>
+          </div>
+        </div>
+
+        <div style="margin-top:12px;font-size:13px;color:var(--muted)">Hazırlayan: Senin Metnin — <span style="color:var(--gold);font-weight:700">Web sürümü</span></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    Bu tek sayfa web sitesi, Shift tuşunun neden önemli olduğunu öğretmek için hazırlanmıştır. İstersen sitenin temasını, yazılarını ya da renklerini değiştirebilirim.
+  </footer>
+
+  <script>
+    // Orijinal uzun yazı parçaları (özetlenmiş/segmentli halde)
+    const sections = {
+      intro: `Aeternum’un vahşi topraklarında, her taşın altında bir tehlike, her ormanın ardında bir gizem yatar. Bu lanetli adada yaşayan her maceracı — ister yeni başlayan bir çaylak olsun, ister savaş meydanlarında çelik yelekleri parlayan bir usta — er ya da geç aynı gerçekle yüzleşir: Shift tuşu, hayatta kalmanın sınavıdır.`,
+      reflex: `Shift: Refleksin ve içgüdünün sesi. New World sadece kılıçların çarpıştığı bir arena değildir; reflekslerin, stratejilerin ve saniyelik kararların oyunudur. Shift tuşuna basmak, karakterinin koşu hızını artırır, seni çevik kılar, seni "ölümün gölgesinden" uzaklaştırır.`,
+      reposition: `Shift: Kaçmak değil, yeniden konumlanmak. Ustalar bilir ki, Shift’e basmak kaçmak değil, yeniden konumlanmaktır. Bir düşman saldırısını savuşturduktan sonra hızla geri çekilip pozisyon almak, ardından taktiksel bir açıdan saldırıya geçmek...`,
+      stamina: `Shift ve stamina yönetimi: Gücün dengesi. Her sprint stamina tüketir. Bu yüzden Shift tuşunu bilinçle kullan; yanlış zamanda tükenmiş stamina seni savunmasız bırakır.`,
+      pvp: `PvP’de Shift’in anlamı: Ölümcül denge. Rakibin saldırısını okumak, ani bir "dodge" ile kenara sıyrılmak, ardından hızlıca pozisyon alıp karşı saldırıya geçmek… Hepsi Shift’in ritmine bağlıdır.`,
+      explore: `Keşif ve hız: Aeternum’un sonsuz topraklarında ilerlemenin anahtarı. Shift’e basmak seni yeni keşiflere taşır; manzarayı izlemekle yetinme, koş ve fethet.`,
+      group: `Grup savaşlarında Shift’in koordinasyonu: Büyük ölçekli savaşlarda, her oyuncunun hareketi önemlidir. Shift ile zamanında pozisyon alan bir tank veya healer, takımını kurtarabilir.`,
+      finale: `Shift: Oyunla insan arasındaki bağ. Bu tuş, oyuncunun karakteriyle olan bağını temsil eder. Parmağının ucundan çıkan o "Shift", klavye üzerindeki en insani reflekslerden biridir: hayatta kalma dürtüsüdür.`
+    };
+
+    // render initial epic content
+    const contentEl = document.getElementById('content');
+    function renderEpic(){
+      contentEl.innerHTML = '';
+      for(const [key, val] of Object.entries(sections)){
+        const sec = document.createElement('div');
+        sec.style.marginBottom='12px';
+        sec.innerHTML = `<h3 style="margin:0 0 6px 0">${humanTitle(key)}</h3><p class="muted" style="margin:0">${val}</p>`;
+        contentEl.appendChild(sec);
+      }
+      const outro = document.createElement('p'); outro.className='muted'; outro.style.marginTop='10px'; outro.textContent = 'Unutma, Aeternum’da Shift’e bilinçle basanlar efsane olur.';
+      contentEl.appendChild(outro);
+    }
+
+    function humanTitle(k){
+      switch(k){
+        case 'intro': return 'Giriş';
+        case 'reflex': return 'Refleks ve İçgüdü';
+        case 'reposition': return 'Kaçış mı, Yeniden Konumlanma mı?';
+        case 'stamina': return 'Stamina Yönetimi';
+        case 'pvp': return 'PvP ve Zamanlama';
+        case 'explore': return 'Keşif ve Hız';
+        case 'group': return 'Takım Savaşları';
+        case 'finale': return 'İnsani Bağ';
+        default: return k;
+      }
+    }
+
+    renderEpic();
+
+    // Mode toggles
+    const toggleMode = document.getElementById('toggleMode');
+    const epicBtn = document.getElementById('epicBtn');
+    const funBtn = document.getElementById('funBtn');
+
+    toggleMode.addEventListener('click', ()=>{
+      const isEpic = toggleMode.textContent.includes('Epik');
+      if(isEpic){ toggleMode.textContent='Mizah Modu'; renderFun(); }
+      else { toggleMode.textContent='Epik Mod'; renderEpic(); }
+    });
+
+    epicBtn.addEventListener('click', ()=>{ renderEpic(); toggleMode.textContent='Epik Mod'; });
+    funBtn.addEventListener('click', ()=>{ renderFun(); toggleMode.textContent='Mizah Modu'; });
+
+    function renderFun(){
+      contentEl.innerHTML='';
+      const jokes = [
+        'Shift: Hızlı koşturma tuşu. Koşarken stamina biter, sonra nefes nefese kalırsın — aynen maratoncu gibi, ama kılıçla yarışıyorsun.',
+        'Shift tuşuna basmak bazen "korkaklık" gibi görünür; ama gerçek korku, mana/daglama değeri bitmiş bir healer olmaktır.',
+        'PvP'de Shift'i yanlış zamanda basarsan, rakibin sana bakıp "neden koşuyorsun abi?" diye sorar.'
+      ];
+      jokes.forEach((j, i)=>{
+        const d = document.createElement('div'); d.style.marginBottom='12px'; d.innerHTML = `<h3 style="margin:0 0 6px 0">Mizahi Nokta ${i+1}</h3><p class="muted" style="margin:0">${j}</p>`;
+        contentEl.appendChild(d);
+      });
+      const tip = document.createElement('p'); tip.className='muted'; tip.style.marginTop='10px'; tip.textContent='Ciddi olmanın sınırı yok; mizah da oynarken işin tadını artırır.';
+      contentEl.appendChild(tip);
+    }
+
+    // Copy actions
+    document.getElementById('copyAll').addEventListener('click', ()=>{
+      copyText(document.getElementById('content').innerText);
+      flash('Tüm metin kopyalandı!');
+    });
+    document.getElementById('copySection').addEventListener('click', ()=>{
+      copyText(document.querySelector('#content > div')?.innerText || document.getElementById('content').innerText);
+      flash('Bölüm kopyalandı!');
+    });
+
+    function copyText(t){
+      navigator.clipboard.writeText(t).catch(()=>{alert('Kopyalama başarısız. Tarayıcı izinlerini kontrol et.')});
+    }
+
+    function flash(msg){
+      const el = document.createElement('div'); el.textContent=msg;
+      Object.assign(el.style,{position:'fixed',right:'18px',bottom:'18px',background:'rgba(0,0,0,0.7)',padding:'10px 14px',borderRadius:'10px',color:'#fff',zIndex:9999});
+      document.body.appendChild(el); setTimeout(()=>el.remove(),2200);
+    }
+
+    // Download HTML button
+    document.getElementById('downloadBtn').addEventListener('click', ()=>{
+      const html = `<!doctype html>${document.documentElement.outerHTML}`;
+      const blob = new Blob([html],{type:'text/html'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a'); a.href=url; a.download='new-world-shift.html'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+    });
+
+    // Share button (simple deep-link simulation)
+    document.getElementById('shareBtn').addEventListener('click', ()=>{
+      const txt = window.location.href + '#new-world-shift';
+      navigator.clipboard.writeText(txt).then(()=> flash('Paylaşma bağlantısı kopyalandı!'))
+        .catch(()=> alert('Bağlantı kopyalanamadı.'));
+    });
+
+  </script>
+</body>
+</html>
